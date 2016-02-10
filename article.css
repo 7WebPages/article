@@ -16,7 +16,7 @@ div.container{
 /*Article - Starting Styles*/
 .container h3 , h1,h3{
   text-transform: none;
-  font-family: 'lobster', cursive;
+  font-family: 'chewy', cursive;
   font-size: 45px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
