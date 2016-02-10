@@ -43,6 +43,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/*Ordered List Style*/
 p + ol li{
   font-family: sans-serif;
   color: #555;
@@ -56,6 +58,8 @@ p + ol li{
 p + ol li {
   font-size: 20px;
 }
+
+/*Unordered List Style*/
 p + ul li{
   font-family: sans-serif;
   color: #555;
@@ -64,12 +68,13 @@ p + ul li{
   -moz-osx-font-smoothing: grayscale;
   list-style: none;
 }
-p + ul li:before {
-  content: "•";
-  color: #ececec;
+p + ul li  {
+  list-style-image: url('./images/eclipse.png');
   font-size: 170%; /* or whatever */
   padding-right: 5px;
 }
+/* List Styling Ends Here*/
+
 div#code{
   height: 40vh;
   overflow: scroll;
