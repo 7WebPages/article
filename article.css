@@ -67,7 +67,7 @@ a{
 }
 /*Article - Ending Styles*/
 
-/*Using Media Queries - Starting Style*/
+/*Using Media Queries - Starting Styles*/
 @media screen and (min-width: 200px) and (max-width: 640px){
   h1.work-title{
     font-size: 35px;
@@ -100,3 +100,4 @@ a{
       min-width: 70vw;
   }
 }
+/*Using Media Queries - Ending Styles*/
