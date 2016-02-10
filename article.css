@@ -1,7 +1,6 @@
 /*Importing Fonts*/
-@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+@import url(https://fonts.googleapis.com/css?family=Dosis:800);
 @import url(https://fonts.googleapis.com/css?family=Chewy);
-@import url(https://fonts.googleapis.com/css?family=Lobster);
 
 /*Normal Body Styles*/
 body{
@@ -16,7 +15,7 @@ div.container{
 /*Article - Starting Styles*/
 .container h3 , h1,h3{
   text-transform: none;
-  font-family: 'chewy', cursive;
+  font-family: Dosis, cursive;
   font-size: 45px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
