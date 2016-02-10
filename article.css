@@ -5,24 +5,43 @@
 
 /*Normal Body Styles*/
 body{
-  max-width: 60%;
-  margin: 0 auto;
+  margin: 50px auto;
+  margin-bottom: 40vh;
   font-family: sans-serif;
 }
-
+/*Bootstrap Container Override*/
+div.container{
+    max-width: 70%;
+}
 /*Article - Starting Styles*/
-h1,h3{
+.container h3 , h1,h3{
+  text-transform: none;
   font-family: 'lobster', cursive;
   font-size: 45px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-p {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  font-weight: bold;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+.articlebody p , p {
   font-family: sans-serif;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  line-height: normal;
+  letter-spacing: none;
   color: #555;
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 p + ul li{
   font-family: sans-serif;
@@ -44,6 +63,7 @@ div#code p{
 }
 a{
   color: #1E824C;
+  text-decoration: underline !important;
 }
 /*Article - Ending Styles*/
 
