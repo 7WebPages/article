@@ -11,7 +11,7 @@ body{
 }
 /*Bootstrap Container Override*/
 div.container{
-    max-width: 70%;
+    max-width: 70vw;
 }
 /*Article - Starting Styles*/
 .container h3 , h1,h3{
@@ -67,35 +67,36 @@ a{
 }
 /*Article - Ending Styles*/
 
-/*Images Banner - Starting Styles*/
-div#django-logo{
-  background: url('./images/django.jpg') no-repeat;
-  min-width: 100%;
-  min-height:60vh;
+/*Using Media Queries - Starting Style*/
+@media screen and (min-width: 200px) and (max-width: 640px){
+  h1.work-title{
+    font-size: 35px;
+  }
+  .container h3, h1, h3{
+    font-size: 30px;
+  }
+  .articlebody p , p{
+    font-size: 17px;
+  }
+  p + ul li {
+    font-size: 17px;
+  }
+  div.container{
+      min-width: 98vw !important;
+  }
 }
-div#instagram-logo{
-  background: url('./images/instagram.jpg') no-repeat;
-  min-width: 100%;
-  min-height:30vh;
+@media screen and (min-width: 600px) and (max-width: 1024px){
+  div.container{
+      min-width: 96vw;
+  }
 }
-div#washington-logo{
-  background: url('./images/washington.jpg') no-repeat;
-  min-width: 100%;
-  min-height:30vh;
+@media screen and (min-width: 1024px) and (max-width: 1100px){
+  div.container{
+      min-width: 80vw;
+  }
 }
-div#disqus-logo{
-  background: url('./images/disqus-logo.jpg') no-repeat;
-  min-width: 100%;
-  min-height:35vh;
+@media screen and (min-width: 1100px) and (max-width: 1680){
+  div.container{
+      min-width: 70vw;
+  }
 }
-div#zapier-logo{
-  background: url('./images/zapier-logo.jpg') no-repeat;
-  min-width: 100%;
-  min-height:30vh;
-}
-div#bitbucket-logo{
-  background: url('./images/bitbucket.jpg') no-repeat;
-  min-width: 100%;
-  min-height:30vh;
-}
-/*Images Banner - Ending Styles*/
