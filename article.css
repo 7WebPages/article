@@ -1,7 +1,6 @@
 /*Importing Fonts*/
-@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+@import url(https://fonts.googleapis.com/css?family=Dosis:800);
 @import url(https://fonts.googleapis.com/css?family=Chewy);
-@import url(https://fonts.googleapis.com/css?family=Lobster);
 
 /*Normal Body Styles*/
 body{
@@ -11,12 +10,12 @@ body{
 }
 /*Bootstrap Container Override*/
 div.container{
-    max-width: 70vw;
+    max-width: 65vw;
 }
 /*Article - Starting Styles*/
 .container h3 , h1,h3{
   text-transform: none;
-  font-family: 'chewy', cursive;
+  font-family: Dosis, cursive;
   font-size: 45px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,9 +50,7 @@ p + ol li{
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border-left: 5px solid #ececec;
   list-style-type: decimal-leading-zero;
-  padding-left: 10px;
 }
 p + ol li {
   font-size: 20px;
@@ -63,18 +60,29 @@ p + ol li {
 p + ul li{
   font-family: sans-serif;
   color: #555;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   list-style: none;
 }
-p + ul li  {
-  list-style-image: url('./images/eclipse.png');
-  font-size: 170%; /* or whatever */
-  padding-right: 5px;
+p + ul li:before {
+  /* For a round bullet */
+  content: '\2022';
+  /* For a square bullet */
+  /*content:'\25A0';*/
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -20px;
+  top: -7px;
+  color: #555;
+  font-size: 150%;
 }
-/* List Styling Ends Here*/
-
 div#code{
   height: 40vh;
   overflow: scroll;
@@ -107,19 +115,48 @@ a{
       min-width: 98vw !important;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1024px){
+@media screen and (min-width: 600px) and (max-width: 800px){
   div.container{
-      min-width: 96vw;
+      min-width: 98vw !important;
+  }
+  h1.work-title{
+    font-size: 35px;
+  }
+  .container h3, h1, h3{
+    font-size: 30px;
+  }
+  .articlebody p , p{
+    font-size: 17px;
+  }
+  p + ul li {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1024px){
+  div.container{
+      min-width: 85vw !important;
+  }
+  h1.work-title{
+    font-size: 35px;
+  }
+  .container h3, h1, h3{
+    font-size: 30px;
+  }
+  .articlebody p , p{
+    font-size: 17px;
+  }
+  p + ul li {
+    font-size: 17px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1100px){
   div.container{
-      min-width: 80vw;
+      min-width: 80vw !important;
   }
 }
-@media screen and (min-width: 1100px) and (max-width: 1680){
+@media screen and (min-width: 1100px) and (max-width: 1280px){
   div.container{
-      min-width: 70vw;
+      min-width: 70vw !important;
   }
 }
 /*Using Media Queries - Ending Styles*/
