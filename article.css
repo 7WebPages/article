@@ -50,7 +50,7 @@ p + ol li{
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  list-style-type: decimal-leading-zero;
+  list-style-type: decimal;
 }
 p + ol li {
   font-size: 20px;
